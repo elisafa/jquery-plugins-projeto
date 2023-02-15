@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <title>Projeto Validação EBAC</title>
+</head>
+<body>
+<header>
+  <h1>Formulário de validação EBAC</h1>
+  <h3>Validando formulário através dos plugins jQuery</h3>
+</header>
+<section>
+  <form id="form">
+    <label for="nome">Nome</label>
+    <input type="text" name="nome" id="nome" minlength="5">
+
+    <label for="email">E-mail</label>
+    <input type="email" name="email" id="email">
+
+    <label for="telefone">Telefone</label>
+    <input type="tel" name="telefone" id="telefone">
+
+    <label for="cpf">CPF</label>
+    <input type="text" name="cpf" id="cpf">
+
+    <label for="endereco">Endereço</label>
+    <input type="text" name="endereco" id="endereco">
+
+    <label for="cep">CEP</label>
+    <input type="text" name="cep" id="cep">
+
+    <button>Enviar</button>
+  </form>
+</section>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="./js/script.js"></script>
+<script src="./js/jquery.mask.min.js"></script>
+<script src="./js/jquery.validate.min.js"></script>
+<script src="./js/messages_pt_BR.js"></script>
+</body>
+</html>
